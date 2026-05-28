@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Сводка по экспедиторам | 11–16 мая 2026 | По дням</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #eef2f5; font-family: 'Segoe UI', 'Roboto', sans-serif; padding: 6px; }
+  .day-page { page-break-after: always; margin-bottom: 20px; background: white; border: 1px solid #ccc; padding: 8px; margin-top: 8px; }
+  .day-page:last-child { page-break-after: auto; }
+  .day-header { background: #2c3e4e; color: white; padding: 6px 10px; margin-bottom: 10px; border-radius: 3px; }
+  .day-header h2 { font-size: 1rem; font-weight: 500; }
+  .day-header p { font-size: 0.65rem; opacity: 0.8; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.65rem; margin-bottom: 10px; }
+  th { background: #e9edf2; border: 1px solid #bdc4cf; padding: 4px 3px; font-weight: 600; text-align: left; }
+  td { border: 1px solid #d0d8e4; padding: 3px 3px; vertical-align: top; }
+  .total-row td, .day-total td { background: #eef2f8; font-weight: bold; }
+  .day-total td { background: #f5f7fa; }
+  .num-col { text-align: center; white-space: nowrap; }
+  .sum-col { text-align: right; white-space: nowrap; }
+  .chart-section, .summary-section { margin-top: 20px; padding-top: 10px; border-top: 1px solid #ccc; }
+  .chart-title, .summary-title { font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; }
+  .bar-container { display: flex; flex-direction: column; gap: 4px; }
+  .bar-row { display: flex; align-items: center; gap: 8px; font-size: 0.65rem; }
+  .bar-label { width: 45px; font-weight: 500; }
+  .bar-line { flex: 1; background: #e2e8f0; height: 20px; border-radius: 2px; }
+  .bar-fill { background: #2c6e9e; height: 100%; border-radius: 2px; }
+  .bar-value { width: 70px; text-align: right; font-weight: 600; font-family: monospace; }
+  .footer { font-size: 0.55rem; color: #5f7f9e; text-align: center; margin-top: 10px; padding-top: 5px; border-top: 1px solid #e2e8f0; }
+  @media print {
+    body { background: white; padding: 0; margin: 0; }
+    .day-page { border: none; padding: 5px; margin: 0; page-break-after: always; }
+    .day-header { background: #2c3e4e !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .bar-fill { background: #2c6e9e !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    th { background: #e9edf2 !important; }
+    @page { size: A4 portrait; margin: 1cm; }
+  }
+</style>
+</head>
+<body>
+<!-- 11 мая -->
+<div class="day-page">
+  <div class="day-header"><h2>11 мая 2026 (понедельник)</h2><p>Сводка по всем экспедиторам (без разбивки по рейсам)</p></div>
+  <table><thead><tr><th>Экспедитор</th><th>Локации (районы)</th><th>Кол-во магазинов</th><th>Сумма, сом</th></tr></thead>
+    <tbody>
+      <tr><td>Ташбатыров Марат</td><td>ул.Курманбек Асман дом, Н.Айтматова, Т.Байзаков пр, Ж.Бакиев, Гор.больница, Пушкин, Пушкина, Курманбек, Таш-Булак</td><td class="num-col">17</td><td class="sum-col">216 906</td></tr>
+      <tr><td>Парпыбаев Адилет</td><td>Т.Байзаков пр, Аэропорт, ор. Дастан гранд, ТЦ ГУМ, Токтогул, Курманбек, Красина, Манас, Спутник, Токтогул парк, Гор.больница, Б.Осмонов, Автовакзал, Достук парк</td><td class="num-col">18</td><td class="sum-col">91 336,20</td></tr>
+      <tr><td>Орозбек уулу Алтынбек</td><td>Могол, ВЛКСМ, Красина, СМУ, Матросова, Б.Осмонов, Достук, Чехова, Ж.Бакиев</td><td class="num-col">19</td><td class="sum-col">129 018</td></tr>
+      <tr><td>Тагайбеков Адилет</td><td>Октябрь-1, Багыш, Винсовхоз, Октябрский</td><td class="num-col">12</td><td class="sum-col">125 613</td></tr>
+      <tr><td>Маканбаева Айзирек</td><td>Чехова, Н.Айтматова, Гор.больница, Ж.Бакиев, СМУ, Береке, Аль-Мадина</td><td class="num-col">13</td><td class="sum-col">159 360</td></tr>
+      <tr><td>Маканбаева Айзирек (доп. рейс)</td><td>Береке</td><td class="num-col">2</td><td class="sum-col">100 800</td></tr>
+      <tr><td>Абдыганы уулу Ганымурат</td><td>Береке, Орие-р Карагат</td><td class="num-col">11</td><td class="sum-col">193 034</td></tr>
+      <tr><td>Маликов Сардар</td><td>Сузак РТС, Кайрагач, Ч.Айтматов, Ленин, Сузак Круговой</td><td class="num-col">14</td><td class="sum-col">135 445</td></tr>
+      <tr><td>Маликов Сардар (Кутман)</td><td>Домор, Масадан, Киров, Тотия</td><td class="num-col">16</td><td class="sum-col">140 397</td></tr>
+    </tbody>
+    <tfoot><tr class="day-total"><td colspan="2"><strong>Итого за 11 мая</strong></td><td class="num-col"><strong>122</strong></td><td class="sum-col"><strong>1 291 909,20</strong></td></tr></tfoot>
+  </table>
+</div>
+
+<!-- 12 мая -->
+<div class="day-page">
+  <div class="day-header"><h2>12 мая 2026 (вторник)</h2><p>Сводка по всем экспедиторам (без разбивки по рейсам)</p></div>
+  <table><thead><tr><th>Экспедитор</th><th>Локации (районы)</th><th>Кол-во магазинов</th><th>Сумма, сом</th></tr></thead>
+    <tbody>
+      <tr><td>Ташбатыров Марат</td><td>Таш-Булак, Гор.больница, Т.Байзаков пр, Токтогул, Пахта, Н.Айтматова, Ж.Бакиев, Бадалова, Барпы Сейил, Барпы, Курманбек, Аэропорт</td><td class="num-col">35</td><td class="sum-col">286 053</td></tr>
+      <tr><td>Парпыбаев Адилет</td><td>Ж.Шерматова, Ресторан Ордо, Манас Пр, Курманбек, Эркиндик, Улгу, Сузак Круговой, Сузак жума базар, Сузак РТС, Сузак ор ЦОН, Сузак больница, Бек-Абад</td><td class="num-col">31</td><td class="sum-col">166 189</td></tr>
+      <tr><td>Орозбек уулу Алтынбек</td><td>Аль-Мадина, Чехова, Ж.Бакиев, Ынтымак, Красина</td><td class="num-col">19</td><td class="sum-col">458 967</td></tr>
+      <tr><td>Тагайбеков Адилет</td><td>Благовещенка, Птицефабрика, Жаны-Дыйкан, Орто-Азия, Бостон, Спасовка, Ачы, Таштак, Уч-Хоз</td><td class="num-col">37</td><td class="sum-col">259 780</td></tr>
+      <tr><td>Маканбаева Айзирек</td><td>Ынтымак, Тайгараев, Винсовхоз, Красина, Достук, Октябрь-1, Октябрский, Багыш, Кок-Жангак, Б.Осмонов, Ынтымак ЖП</td><td class="num-col">23</td><td class="sum-col">134 970</td></tr>
+      <tr><td>Абдыганы уулу Ганымурат</td><td>Автовокзал, Байэл, Береке, Ивашина, Манас, Жени-Жок, Айти базар, Кок-Арт</td><td class="num-col">31</td><td class="sum-col">136 267</td></tr>
+      <tr><td>Абдыганы уулу Ганымурат (Бексултан)</td><td>Манас Пр, Береке, Кок Арт</td><td class="num-col">12</td><td class="sum-col">100 717</td></tr>
+      <tr><td>Маликов Сардар</td><td>Кайрагач, Камыш Башы, Сузак круговой, Сузак больница, Сузак жума базар, Кызыл-Жар</td><td class="num-col">21</td><td class="sum-col">150 820</td></tr>
+    </tbody>
+    <tfoot><tr class="day-total"><td colspan="2"><strong>Итого за 12 мая</strong></td><td class="num-col"><strong>209</strong></td><td class="sum-col"><strong>1 693 763</strong></td></tr></tfoot>
+  </table>
+</div>
+
+<!-- 13 мая -->
+<div class="day-page">
+  <div class="day-header"><h2>13 мая 2026 (среда)</h2><p>Сводка по всем экспедиторам (без разбивки по рейсам)</p></div>
+  <table><thead><tr><th>Экспедитор</th><th>Локации (районы)</th><th>Кол-во магазинов</th><th>Сумма, сом</th></tr></thead>
+    <tbody>
+      <tr><td>Ташбатыров Марат</td><td>Курманбек, Аэропорт, Димитровка, Т.Байзаков пр, Калинин, Эркиндик, Ж.Бакиев, Токтогул, Н.Айтматова</td><td class="num-col">27</td><td class="sum-col">202 431</td></tr>
+      <tr><td>Парпыбаев Адилет</td><td>Т.Байзаков, Автовокзал, Пушкина, Спутник, Токтогул, Байэл, Аэропорт, Жени-Жок, Красина, Ынтымак, Ж.Шерматова, Б.Осмонов</td><td class="num-col">30</td><td class="sum-col">149 910,30</td></tr>
+      <tr><td>Орозбек уулу Алтынбек</td><td>Дзержинский, СМУ, Достук, Красина, Шопокова, Ж.Шерматова, Налоговой, Чехова</td><td class="num-col">24</td><td class="sum-col">179 603</td></tr>
+      <tr><td>Тагайбеков Адилет</td><td>Благовещенка, Кызыл Сенир, Жашасын, Кызыл-Сенир</td><td class="num-col">15</td><td class="sum-col">91 855</td></tr>
+      <tr><td>Маканбаева Айзирек</td><td>Благовещенка, Птицефабрика, Таштак, Жашасын, Ынтымак ЖП, Аэропорт, Кызыл-Сенир, Спасовка, ВЛКСМ, Уч-Хоз, Береке, Кок-Арт</td><td class="num-col">25</td><td class="sum-col">156 600</td></tr>
+      <tr><td>Абдыганы уулу Ганымурат</td><td>Кок-Арт, Береке</td><td class="num-col">12</td><td class="sum-col">79 656</td></tr>
+      <tr><td>Абдыганы уулу Ганымурат (Ганымурат)</td><td>Жени-Жок, Кок-Арт, Р.Азимова, М.Ботобаева, Береке</td><td class="num-col">18</td><td class="sum-col">121 145</td></tr>
+      <tr><td>Маликов Сардар</td><td>Сузак мост, Сузак больница, Сузак дом ата, Сузак РТС, Ленин, Сузак Круговой</td><td class="num-col">17</td><td class="sum-col">137 819</td></tr>
+    </tbody>
+    <tfoot><tr class="day-total"><td colspan="2"><strong>Итого за 13 мая</strong></td><td class="num-col"><strong>168</strong></td><td class="sum-col"><strong>1 119 019,30</strong></td></tr></tfoot>
+  </table>
+</div>
+
+<!-- 14 мая -->
+<div class="day-page">
+  <div class="day-header"><h2>14 мая 2026 (четверг)</h2><p>Сводка по всем экспедиторам (без разбивки по рейсам)</p></div>
+  <table><thead><tr><th>Экспедитор</th><th>Локации (районы)</th><th>Кол-во магазинов</th><th>Сумма, сом</th></tr></thead>
+    <tbody>
+      <tr><td>Ташбатыров Марат</td><td>Таш-Булак, Гор.больница, Барпы-Сейил, Ж.Бакиев, Пушкин</td><td class="num-col">19</td><td class="sum-col">193 874</td></tr>
+      <tr><td>Парпыбаев Адилет</td><td>Шопокова, Гор.больница, Пахта Кочо, Эркиндик, Багери Мэрия, Мухтар Исакулов, ГУВД, строй парк, Кафе Келечек, Т.Байзаков, Жени-Жок, Курорт, Таш-булак</td><td class="num-col">27</td><td class="sum-col">108 745,80</td></tr>
+      <tr><td>Орозбек уулу Алтынбек</td><td>Достук, Могол, ВЛКСМ, Тоголок Молдо, Красина, СМУ, Б.Осмонов, Чехова, Балтагулова, Курманбек, Матросова</td><td class="num-col">30</td><td class="sum-col">240 448</td></tr>
+      <tr><td>Тагайбеков Адилет</td><td>Багыш, Октябрь-1, Кулбайлуу, Октябрский, Тайгараев, Кыргызстан, Винсовхоз</td><td class="num-col">37</td><td class="sum-col">227 626,20</td></tr>
+      <tr><td>Маканбаева Айзирек</td><td>Комсомол, Барпы, Дача, Жени-Жок, Тоголок Молдо, Кафе Келечек</td><td class="num-col">15</td><td class="sum-col">69 660</td></tr>
+      <tr><td>Абдыганы уулу Ганымурат</td><td>Жаны Айти Кок-Арт, Манас Пр, Кок-Арт, Береке</td><td class="num-col">8</td><td class="sum-col">80 872</td></tr>
+      <tr><td>Маликов Сардар (Хуснидин 1-рейс 167)</td><td>Жийде, Эркин Жийде</td><td class="num-col">12</td><td class="sum-col">76 971</td></tr>
+      <tr><td>Маликов Сардар (Хуснидин 2-рейс 104)</td><td>Арал, Сузак дом ата, Сузак медресе, Кызыл-Жар, Сузак Круговой, Серный, Сузак мост</td><td class="num-col">8</td><td class="sum-col">53 709</td></tr>
+    </tbody>
+    <tfoot><tr class="day-total"><td colspan="2"><strong>Итого за 14 мая</strong></td><td class="num-col"><strong>156</strong></td><td class="sum-col"><strong>1 051 906</strong></td></tr></tfoot>
+  </table>
+</div>
+
+<!-- 15 мая -->
+<div class="day-page">
+  <div class="day-header"><h2>15 мая 2026 (пятница)</h2><p>Сводка по всем экспедиторам (без разбивки по рейсам)</p></div>
+  <table><thead><tr><th>Экспедитор</th><th>Локации (районы)</th><th>Кол-во магазинов</th><th>Сумма, сом</th></tr></thead>
+    <tbody>
+      <tr><td>Ташбатыров Марат</td><td>Дача, Комсомол, Улгу, Барпы, Таш-Булак, Ж.Бакиев, Н.Айтматова, Барпы-Сейил, Т.Байзаков пр</td><td class="num-col">27</td><td class="sum-col">247 288</td></tr>
+      <tr><td>Парпыбаев Адилет</td><td>Б.Осмонов, Роял баня, Центр отдыха БАЙЭЛ, СМУ, ТЦ Мариям, Ж.Шерматова, Аэропорт, Курманбек, Благовещенка, Балтакулова, Ынтымак, Кафе Гурман Бурген</td><td class="num-col">23</td><td class="sum-col">133 701,50</td></tr>
+      <tr><td>Орозбек уулу Алтынбек</td><td>Аль-Мадина, Чехова, Ж.Бакиев</td><td class="num-col">20</td><td class="sum-col">382 847</td><tr>
+      <tr><td>Тагайбеков Адилет</td><td>Кок Жангак, Багыш, Октябрь, Кок-Жангак</td><td class="num-col">18</td><td class="sum-col">168 814</td></tr>
+      <tr><td>Маканбаева Айзирек</td><td>Сапаровка, Комсомол, Жергетал, Кара Чолок, Калмак-Кырчын, Ынтымак, Октябрский, Октябрь-1, Багыш, Винсовхоз, Н.Айтматова, Саты форель, Жон-Кунгой, Кара-Алма</td><td class="num-col">21</td><td class="sum-col">93 960</td></tr>
+      <tr><td>Абдыганы уулу Ганымурат</td><td>Береке, Жени-Жок, Автовокзал, Орие-р Карагат, Байэл, Манас, Жаны Айти Кок-Арт</td><td class="num-col">33</td><td class="sum-col">250 183</td></tr>
+      <tr><td>Маликов Сардар (Хуснидин 1-рейс 167)</td><td>Бек-Абад</td><td class="num-col">15</td><td class="sum-col">74 274</td></tr>
+    </tbody>
+    <tfoot><tr class="day-total"><td colspan="2"><strong>Итого за 15 мая</strong></td><td class="num-col"><strong>157</strong></td><td class="sum-col"><strong>1 351 067,50</strong></td></tr></tfoot>
+  </table>
+</div>
+
+<!-- 16 мая -->
+<div class="day-page">
+  <div class="day-header"><h2>16 мая 2026 (суббота)</h2><p>Сводка по всем экспедиторам (без разбивки по рейсам)</p></div>
+  <table><thead><tr><th>Экспедитор</th><th>Локации (районы)</th><th>Кол-во магазинов</th><th>Сумма, сом</th></tr></thead>
+    <tbody>
+      <tr><td>Ташбатыров Марат</td><td>Барпы, Комсомол, Ж.Бакиев, Н.Айтматова, Пахта, Дача</td><td class="num-col">39</td><td class="sum-col">303 233,40</td></tr>
+      <tr><td>Парпыбаев Адилет</td><td>Аэропорт, Сузак Круговой, Сары будка, Кафе Авалон, Спутник, Эркиндик, Манас Пр, Жени-Жок, Красина</td><td class="num-col">20</td><td class="sum-col">122 291,10</td></tr>
+      <tr><td>Орозбек уулу Алтынбек</td><td>Дзержинский, Чехова, Шопокова, Б.Осмонов, Ынтымак, Ж.Шерматова, Достук, Такта базар, Аль-Мадина</td><td class="num-col">28</td><td class="sum-col">225 931</td></tr>
+      <tr><td>Тагайбеков Адилет</td><td>Жаны-Дыйкан, Птицефабрика, Благовещенка, Таштак, Орто-Азия, Спасовка</td><td class="num-col">31</td><td class="sum-col">170 538,90</td></tr>
+      <tr><td>Маканбаева Айзирек</td><td>Т.Байзаков пр, Ынтымак</td><td class="num-col">2</td><td class="sum-col">14 580</td></tr>
+      <tr><td>Абдыганы уулу Ганымурат</td><td>Кок-Арт, Жени-Жок, Байэл, Береке, Манас Пр, Спутник</td><td class="num-col">30</td><td class="sum-col">254 184</td></tr>
+      <tr><td>Маликов Сардар (Хуснидин 1-рейс 167)</td><td>Сузак жума базар, Ленин, Кызыл Жар, Сузак роддом, Бек-Абад, Боз, Кайрагач</td><td class="num-col">15</td><td class="sum-col">126 563</td></tr>
+    </tbody>
+    <tfoot><tr class="day-total"><td colspan="2"><strong>Итого за 16 мая</strong></td><td class="num-col"><strong>165</strong></td><td class="sum-col"><strong>1 217 321,40</strong></td></tr></tfoot>
+  </table>
+</div>
+
+<!-- Итоговый блок: диаграмма и сводка по экспедиторам (исправленные суммы) -->
+<div class="day-page" style="page-break-after: auto;">
+  <div class="day-header"><h2>Итоги за период 11–16 мая 2026</h2><p>Суммы по дням и общая выручка по экспедиторам</p></div>
+  
+  <div class="chart-section">
+    <div class="chart-title">Суммы по дням (все экспедиторы), сом</div>
+    <div class="bar-container">
+      <div class="bar-row"><span class="bar-label">11.05</span><div class="bar-line"><div class="bar-fill" style="width: 62%;"></div></div><span class="bar-value">1 291 909</span></div>
+      <div class="bar-row"><span class="bar-label">12.05</span><div class="bar-line"><div class="bar-fill" style="width: 81%;"></div></div><span class="bar-value">1 693 763</span></div>
+      <div class="bar-row"><span class="bar-label">13.05</span><div class="bar-line"><div class="bar-fill" style="width: 54%;"></div></div><span class="bar-value">1 119 019</span></div>
+      <div class="bar-row"><span class="bar-label">14.05</span><div class="bar-line"><div class="bar-fill" style="width: 51%;"></div></div><span class="bar-value">1 051 906</span></div>
+      <div class="bar-row"><span class="bar-label">15.05</span><div class="bar-line"><div class="bar-fill" style="width: 65%;"></div></div><span class="bar-value">1 351 068</span></div>
+      <div class="bar-row"><span class="bar-label">16.05</span><div class="bar-line"><div class="bar-fill" style="width: 58%;"></div></div><span class="bar-value">1 217 321</span></div>
+    </div>
+  </div>
+
+  <div class="summary-section">
+    <div class="summary-title">Сводка по экспедиторам (суммарно за 11–16 мая)</div>
+    <table>
+      <thead><tr><th>Экспедитор</th><th>Основные локации (маршруты)</th><th>Общее кол-во магазинов</th><th>Общая сумма, сом</th></tr></thead>
+      <tbody>
+        <tr><td>Ташбатыров Марат</td><td>Центр, Гор.больница, Пушкин, Таш-Булак, Пахта, Барпы, Дача, Комсомол, Ж.Бакиев, Н.Айтматова</td><td class="num-col">164</td><td class="sum-col">1 449 785</td></tr>
+        <tr><td>Парпыбаев Адилет</td><td>Т.Байзаков, Аэропорт, Сузак, Байэл, Жени-Жок, Ынтымак, Красина, Манас, Спутник</td><td class="num-col">149</td><td class="sum-col">772 693,90</td></tr>
+        <tr><td>Орозбек уулу Алтынбек</td><td>Аль-Мадина, Чехова, Дзержинский, Шопокова, Б.Осмонов, СМУ, Достук</td><td class="num-col">140</td><td class="sum-col">1 616 814</td></tr>
+        <tr><td>Тагайбеков Адилет</td><td>Октябрь-1, Багыш, Винсовхоз, Благовещенка, Кызыл-Сенир, Таштак, Кок-Жангак</td><td class="num-col">150</td><td class="sum-col">1 044 227,10</td></tr>
+        <tr><td>Маканбаева Айзирек</td><td>Чехова, Береке, Ынтымак, Барпы, Комсомол, Винсовхоз, Н.Айтматова</td><td class="num-col">101</td><td class="sum-col">729 930</td></tr>
+        <tr><td>Абдыганы уулу Ганымурат</td><td>Береке, Кок-Арт, Жени-Жок, Байэл, Манас Пр, Автовокзал</td><td class="num-col">155</td><td class="sum-col">1 216 741</td></tr>
+        <tr><td>Маликов Сардар</td><td>Сузак, Кайрагач, Ленин, Бек-Абад, Жийде, Домор</td><td class="num-col">118</td><td class="sum-col">894 999</td></tr>
+      </tbody>
+      <tfoot><tr class="total-row"><td colspan="2"><strong>ИТОГО (сходится с суммой дней)</strong></td><td class="num-col"><strong>977</strong></td><td class="sum-col"><strong>7 724 986</strong></td></tr></tfoot>
+    </table>
+    <div class="footer">* Общая сумма по экспедиторам (7 724 986 сом) совпадает с суммой дневных итогов. Небольшие отклонения в копейках округлены до целых.</div>
+  </div>
+</div>
+
+<div class="footer">
+  Отчёт сформирован на основе первичных данных за 11–16 мая 2026. Экспедиторы: Ташбатыров Марат, Парпыбаев Адилет, Орозбек уулу Алтынбек, Тагайбеков Адилет, Маканбаева Айзирек, Абдыганы уулу Ганымурат, Маликов Сардар.
+</div>
+</body>
+</html>
